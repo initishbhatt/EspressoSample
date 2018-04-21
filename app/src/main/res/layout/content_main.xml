@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/app_label"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/height"
+        android:gravity="center"
+        android:text="@string/value_store"
+        android:textColor="@android:color/background_dark"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center_horizontal"
+        android:text="@string/this_app_is_just_for_demonstration_purpose_of_espresso_robot_pattern"
+        android:textColor="@android:color/background_dark"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_label" />
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="@android:color/white"
+        android:hint="@string/add_any_value_in_the_store"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
+        android:layout_margin="@dimen/fab_margin"
+        android:enabled="false"
+        android:text="@string/add_to_store"
+        app:layout_constraintBottom_toTopOf="@+id/button_show"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_name" />
+
+    <Button
+        android:id="@+id/button_show"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
+        android:layout_margin="@dimen/fab_margin"
+        android:enabled="false"
+        android:text="@string/show_store_value"
+        app:layout_constraintBottom_toTopOf="@+id/text_store_value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add" />
+
+    <TextView
+        android:id="@+id/text_store_value"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
+        android:layout_marginBottom="108dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:hint="@string/store_value"
+        android:text="@string/stored_value_is_displayed_here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_show" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EspressoSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_to_store">Add to Store</string>
+    <string name="show_store_value">Show Store Value</string>
+    <string name="store_value">store value</string>
+    <string name="add_any_value_in_the_store">add any value in the store</string>
+    <string name="value_store">Value Store</string>
+    <string name="add_value">add value</string>
+    <string name="this_app_is_just_for_demonstration_purpose_of_espresso_robot_pattern">This app is just for demonstration purpose of espresso robot pattern.</string>
+    <string name="stored_value_is_displayed_here">Stored value is displayed here!!</string>
+</resources>
