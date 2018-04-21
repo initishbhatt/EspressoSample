@@ -1,7 +1,7 @@
 # EspressoSample
 Sample Application to showcase Espresso Testing using the Robot Pattern
 
-![Gif](../master/screenshot/EspressoTest.gif =40x20) 
+![Gif](../master/screenshot/EspressoTest.gif)
 
 ## Dependencies
 * [Espresso](https://google.github.io/android-testing-support-library/docs/espresso/index.html)
