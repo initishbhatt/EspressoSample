@@ -57,4 +57,28 @@ class MainActivityTest {
             }
         }
     }
+
+    @Test
+    fun test_appflow() {
+        mainScreen {
+            enterText("my name")
+            mainAssert {
+                checkAddToStoreButtonEnabled()
+                checkShowStoreButtonDisabled()
+            }
+
+            addToStoreClick()
+
+            mainAssert {
+                checkShowStoreButtonEnabled()
+            }
+
+            showStoreClick()
+
+            mainAssert {
+                checkTextsAreMatching("my name")
+            }
+
+        }
+    }
 }
